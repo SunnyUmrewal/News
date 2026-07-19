@@ -1,0 +1,102 @@
+here we will learn about class based components
+go to app.js
+
+remove the function based component i.e function app()
+
+
+install es7 react redux extension that gives snippets
+for class based component
+
+write rcc in app.js and enter, it will give class 
+based component syntax.
+
+read that file;
+
+--------------------------
+
+we will build a news app
+using news api website that will give us daily news
+
+
+
+now change the title in index.html
+----------------------------
+
+now creating a navbar component using bootstrap
+
+create a folder named components and create navbar.js file
+and write rcep and press enter that will give snippet 
+for react class component with proptype.
+
+add navbar to app.js
+----------------------------
+
+create news.js
+add that to app.js
+----------------------------
+
+create newsitem.js component which will hold many news
+add that into news component
+
+using bootstrap to create newsitem.
+
+taking title and decription through props
+
+as its a class based components we use this.props
+before that we will declare those variables to fetch from object and use them
+its a concept of deconstruction in js.
+
+
+---------------------------------
+
+now creating sampleoutput file
+and this will help to fetch news
+
+---------------------------------
+
+now we will display news item, desc, img dynamically through
+news api
+using classes objects and constructor
+
+constructor is used in react class throujgh using super() 
+it runs whenever an obj of class is created
+(3 times here is we have 3 newsitems)
+
+state is initialized within constructor using this.state.
+state should be used when we have a data that changes over time.
+when we want to reflect on the ui without a page reload.
+
+
+----------------------------------
+
+component lifecycle:
+
+mounting : component is created.
+updating : component is displayed and keep updating.
+unmonting: component is removed from the screen.
+
+
+mounting phase: 
+when react creates component it performs:
+constructor()
+render()
+componentDidMount()
+
+
+constructor()
+this runs only once.
+used for: 
+creating state
+binding methods.
+
+
+
+
+
+
+
+
+
+
+
+
