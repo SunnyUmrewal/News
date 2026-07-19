@@ -31,7 +31,7 @@ import React, { Component } from 'react'
 import NavBar from './Components/NavBar';
 import News from './Components/News';
 
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import { HashRouter as Router, Routes, Route, Link } from "react-router-dom";
 
 
 export default class App extends Component {
