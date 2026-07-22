@@ -23,18 +23,15 @@ const News = (props) => {
     const apiKey = process.env.REACT_APP_NEWS_API_KEY;
     
 
-    console.log("API Key:", apiKey);
-    console.log("Length:", apiKey?.length);
-
     // const url = `https://newsapi.org/v2/top-headlines?country=us&category=${props.category}&apiKey=${apiKey}&page=${pageNo}&pageSize=${props.pageSize}`;
     const url = `https://newsdata.io/api/1/latest?apikey=${apiKey}&country=us&category=${props.category}&language=en`;
     
     setLoading(true);
-    console.log(url);
+    // console.log(url);
     
     let data = await fetch(url);
 
-    console.log(data.status);
+    // console.log(data.status);
 
     let parsedData = await data.json();
     console.log(JSON.stringify(parsedData, null, 2));
@@ -42,7 +39,7 @@ const News = (props) => {
     // let parsedData = await data.json();
 
     if (!data.ok) {
-    console.error(parsedData);
+    // console.error(parsedData);
     setLoading(false);
     return;
     }
@@ -77,13 +74,12 @@ const News = (props) => {
 
 
     const apiKey = process.env.REACT_APP_NEWS_API_KEY;
-    console.log(process.env.REACT_APP_NEWS_API_KEY);
     // const url = `https://newsapi.org/v2/top-headlines?country=us&category=${props.category}&apiKey=${apiKey}&page=${nextPage}&pageSize=${props.pageSize}`;
 const url =`https://newsdata.io/api/1/latest?apikey=${apiKey}&country=us&category=${props.category}&language=en&page=${nextPage}`;
     let data = await fetch(url);
     let parsedData = await data.json();
     // let parsedData = await data.json();
-    console.log(parsedData.results);
+    // console.log(parsedData.results);
 
     if (parsedData.status === "error") {
         console.error(parsedData.results.message);

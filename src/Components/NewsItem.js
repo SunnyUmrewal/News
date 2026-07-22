@@ -1,4 +1,5 @@
 import React from 'react'
+import image from './imgNotAvailable.jpg'
 
 const NewsItem = (props) => {
         
@@ -8,7 +9,11 @@ const NewsItem = (props) => {
       <div className="my-3">
         
             <div  className="card">
-            <img src={!imgUrl?"https://www.aljazeera.com/wp-content/uploads/2026/07/2026-07-03T223244Z_1340742998_UP1EM731QMIPH_RTRMADP_3_SOCCER-WORLDCUP-ARG-CPV-1783118040.jpg?resize=1920%2C1440":imgUrl}  className="card-img-top" alt="..."/>
+            <img
+              src={imgUrl ? imgUrl : image}
+              className="card-img-top"
+              alt="News"
+            />
             <div  className="card-body" >
               
                 <h5  className="card-title">{title}...</h5>
