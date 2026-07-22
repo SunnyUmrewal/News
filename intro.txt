@@ -93,6 +93,20 @@ binding methods.
 
 
 
+-----------------------
+
+react hooks
+
+:features of class based componenets in func based components
+
+:it allows you to use state and other react features without writing a class.
+
+:hooks are functions which "hook into" react state and life cycle features
+from function componenets.
+
+commonly used react hooks:
+
+useState , useEffect, useContext, useRef
 
 
 
